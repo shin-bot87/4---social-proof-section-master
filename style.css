@@ -130,3 +130,22 @@ main {
     line-height: 20px;
     margin-top: 30px;
 }
+
+/*MEDIA QUERIES*/
+@media (max-width: 1020px) {
+    .layout {
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 752px) {
+    .card {
+        margin-top: 50px;
+    }
+
+}
