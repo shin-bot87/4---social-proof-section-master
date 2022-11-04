@@ -1,0 +1,132 @@
+:root {
+    --Very-Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+    --Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Grayish-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 15px;
+    min-height: 100vh;
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+    url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+}
+
+main {
+    max-width: 1440px;
+    min-width: 375px;
+    display: grid;
+}
+
+
+.layout {
+    height: 50vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.top_left,
+.top_right {
+    display: flex;
+    flex-direction: column;
+}
+
+.top_left h1 {
+    font-size: 4rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+    margin-bottom: 20px;
+}
+
+.top_left p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--Dark-Grayish-Magenta);
+    line-height: 35px;
+}
+
+.top_right .row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Light-Grayish-Magenta);
+    padding: 10px;
+    margin: 8px;
+    border-radius: 10px;
+}
+
+.top_right .row:hover {
+    transform: translate(-40px, 0);
+    transition: all 0.5s ease-in-out;
+}
+
+.top_right .row .starred {
+    margin: 10px;
+}
+
+.fa-star {
+    color: #ea9548;
+    margin: 2px;
+}
+
+.top_right .row .text {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--Very-Dark-Magenta);
+}
+
+.bottom .card {
+    width: 350px;
+    height: 230px;
+    background-color: var(--Very-Dark-Magenta);
+    border-radius: 8px;
+}
+
+.bottom .card:hover {
+    transform: translate(0, -40px);
+    transition: all 0.5s ease-in-out;
+}
+
+.profile-pic {
+    display: flex;
+    align-items: center;
+}
+
+.profile-pic img {
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.profile-text {
+    color: var(--White);
+    margin-left: 20px;
+    margin-top: 25px;
+    line-height: 20px;
+}
+
+.verified-buyer {
+    color: var(--Soft-Pink);
+}
+
+
+.description-text {
+    color: var(--White);
+    font-size: 1.0rem;
+    text-align: center;
+    line-height: 20px;
+    margin-top: 30px;
+}
